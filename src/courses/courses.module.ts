@@ -10,3 +10,4 @@ import { Course } from './entities/course.entity';
     providers: [CoursesService],
 })
 export class CoursesModule { }
+ 
