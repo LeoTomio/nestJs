@@ -16,4 +16,3 @@ async function bootstrap() {
   console.log(`Api rodando na porta ${port} `)
 }
 bootstrap();
-
