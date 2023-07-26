@@ -1,0 +1,10 @@
+
+como criar um container :
+
+Precisa ter o docker instalado ,
+
+cria uma base no banco e coloque asconfigs no app.modules.ts
+rode este comando no terminal
+docker run --name nestdb -e POSTGRES_PASSWORD=root -p 5432:5432 postgres
+
+depois rode yarn start criar as tabelas
