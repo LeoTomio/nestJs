@@ -3,7 +3,7 @@ import { AppModule } from './app.module';
 import { ValidationPipe } from '@nestjs/common';
 
 async function bootstrap() {
-  let port = "3005"
+  let port = "3002"
   const app = await NestFactory.create(AppModule);
 
   app.useGlobalPipes(new ValidationPipe({

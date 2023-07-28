@@ -1,19 +1,9 @@
-# Start your image with a node base image
-FROM node:18-alpine
+FROM node:14.15.4-alpine3.12
 
-# The /app directory should act as the main application directory
-WORKDIR /app
+RUN apk add --no-cache bash
 
-# Copy the app package and package-lock.json file
-COPY package*.json ./ 
+RUN npm install -g @nestjs/cli
 
-# Install node packages, install serve, build the app, and remove dependencies at the end
-RUN cd ..
-RUN yarn install 
+USER node
 
-COPY . .
-
-EXPOSE 3005
-
-# Start the app using serve command
-CMD [ "yarn", "start"]
+WORKDIR /home/node/app

@@ -1,14 +1,13 @@
 module.exports = {
     type: 'postgres',
-    host: 'localhost',
+    host: 'db',
     port: 5432,
-    username: 'postgres',    
+    username: 'postgres',
     password: 'root',
-    database: 'nestdb',
+    database: 'cursonestjs',
     entities: ['dist/**/*.entity.js'],
     migrations: ['dist/migrations/*.js'],
     cli: {
         migrationsDir: 'src/migrations/'
     },
 };
- 
