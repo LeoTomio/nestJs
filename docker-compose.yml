@@ -23,7 +23,7 @@ services:
       - .docker/dbdata:/var/lib/postgresql/data
     environment:
       - POSTGRES_PASSWORD=root
-      - POTGRES_DB=cursonestjs
+      - POSTGRES_DB=cursonestjs
 
   pgadmin:
     image: dpage/pgadmin4
