@@ -20,7 +20,7 @@ export class CreateCoursesTable1690573814698 implements MigrationInterface {
                     type: 'varchar'
                 },
                 {
-                    name: 'created_ad',
+                    name: 'created_at',
                     type: 'timestamp',
                     default: 'CURRENT_TIMESTAMP',
                 }

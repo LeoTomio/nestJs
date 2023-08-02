@@ -48,7 +48,7 @@ export class CoursesService {
                 updateCourseDto.tags.map((name) => this.preloadTagByName(name))
             ))
         const course = await this.courseRepository.preload({
-            id: +id, //Converte o id  pra numero, basta apenas colocar o '+' na frente
+            id: id,
             ...updateCourseDto,
             tags
         })
